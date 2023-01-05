@@ -45,9 +45,9 @@ comm.dat | Noms des 3 meilleurs commerciaux
 
 Groupe | Tâches | Progression
 -|-|-
-~~Alexandre Le Marec~~ | ~~Créer le git~~ | Fini
+~~Alexandre Le Marec, Maxime Perrot~~ | ~~Créer le git~~ | Fini
 ~~Alexandre Le Marec~~ | ~~N°1 Fichier de configuration des régions~~ | Fini
-Duncan Cadoret, Alexandre Le Marec | N°2 Script PHP pour la génération | A faire
-Diane Monéger, Maxime Perrot, Fatou Thiam | N°3 Page HTML et CSS | A faire
-Duncan Cadoret | N°4 Compte-rendu | A faire
+Duncan Cadoret, Alexandre Le Marec | N°2 Script PHP pour la génération | En cours
+Diane Monéger, Maxime Perrot, Fatou Thiam | N°3 Page HTML et CSS | En cours
+Maxime Perrot | N°4 Compte-rendu | A faire
 
