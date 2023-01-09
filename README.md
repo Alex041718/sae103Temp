@@ -41,6 +41,11 @@ comm.dat | Noms des 3 meilleurs commerciaux
    1. Rendre un fichier TACHES_1.txt détaillant la liste des tâches réalisées en semaines 1 et 2
    2. La répartition du travail individuel (en %) dans le groupe
 
+```mermaid
+graph TD
+    A[Données brut<br><br>Bretagne.txt<br>Normandie.txt] --> |Extraction| B[Texte formaté] --> |Fusion| C[Model.php<br>Model.css] --> |HTML2PDF| D[PDFs finaux<br><br>Bret.pdf<br>Norm.pdf<br>]
+```
+
 ## Répartition des tâches : 
 
 Groupe | Tâches | Progression
