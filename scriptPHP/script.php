@@ -4,7 +4,7 @@
 // Génération des fichiers de sortie dans "../dataExtracted/"
 
 // Le nom de la région qui est contenu dans notre fichier d'entré (ex: Bretagne.txt)
-$name_region = "Bretagne";
+$name_region = "Auvergne-Rhone-Alpes";
 
 
 
