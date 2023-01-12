@@ -22,7 +22,7 @@ Le script bash `autoScript.sh` va exécuter le script php `script.php` pour chaq
 
 ## Exemple
 
-Exemple avec `Auvergne-Rhone-Alpes.txt` dans `./ressources_client/Textes/`
+Exemple avec `Auvergne-Rhone-Alpes.txt` et `Bourgogne-Franche-Comté.txt` dans `./ressources_client/Textes/`
 
 Le résultat est la création de 
 * `Auvergne-Rhone-Alpes_bestComm.data`
@@ -34,10 +34,14 @@ Le résultat est la création de
 ├── dataExtracted
 │   ├── Auvergne-Rhone-Alpes_bestComm.data
 │   ├── Auvergne-Rhone-Alpes_stat.data
-│   └── Auvergne-Rhone-Alpes_text.data
+│   ├── Auvergne-Rhone-Alpes_text.data
+│   ├── Bourgogne-Franche-Comté_bestComm.data
+│   ├── Bourgogne-Franche-Comté_stat.data
+│   └── Bourgogne-Franche-Comté_text.data
 ├── ressources_client
 │   └── Textes
-│       └── Auvergne-Rhone-Alpes.txt
+│       ├── Auvergne-Rhone-Alpes.txt
+│       └── Bourgogne-Franche-Comté.txt
 └── script
     ├── autoScript.sh
     └── script.php
