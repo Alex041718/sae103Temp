@@ -1,0 +1,79 @@
+/* couleurs du site de Docker :
+    -#003f8c : bleu foncé
+    -#e6e7ec : gris clair
+*/
+
+body {
+    background-color: #e6e7ec;
+}
+
+section {
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    margin: 0.5em 2em 2em 2em;
+    padding: 0em 2em 2em 2em;
+    position: relative;
+    height: 100vh;
+
+}
+
+section.garde {
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+ul.rang {
+    display: flex;
+    list-style-type: none;
+}
+
+ul.pres li{
+    padding: 0.5em;
+    list-style-type: none;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+tr:nth-child(odd) {
+    background-color: #cccccc;
+}
+
+th {
+    background-color: #003f8c;
+    color : #d1d1d1;
+}
+
+p {
+    overflow-y: scroll;
+    height: 100px;
+}
+
+div {
+    position: absolute;
+    bottom: 0;
+    min-height: 5rem;
+    font-size: 15px;
+
+}
+
+@media print {
+    section {
+       border: 1px solid black;
+       width: 8.26in;
+       height: 11.66in;
+       margin: 0;
+       page-break-after: always;
+    }
+ }
+ 
