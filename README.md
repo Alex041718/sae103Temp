@@ -1,5 +1,7 @@
 # SAE 1.03 Installation poste de dév.
 
+[[_TOC_]]
+
 ## Tâches
 1. Fichier de configuration des régions
    1. A rendre : 
@@ -46,7 +48,7 @@ graph TD
     A[Données brut<br><br>Bretagne.txt<br>Normandie.txt] --> |Extraction| B[Texte formaté] --> |Fusion| C[Model.php<br>Model.css] --> |HTML2PDF| D[PDFs finaux<br><br>Bret.pdf<br>Norm.pdf<br>]
 ```
 
-## Répartition des tâches : 
+## Répartition des tâches
 
 Groupe | Tâches | Progression
 -|-|-
