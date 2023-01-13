@@ -8,5 +8,5 @@ do
     filename=$(basename "$file" .txt)
     # exécute le script PHP en utilisant le nom de fichier courant comme paramètre
     php script.php "$filename"
-  
+    
 done
