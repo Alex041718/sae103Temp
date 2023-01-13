@@ -15,10 +15,10 @@
 ## Instructions
 
 1. Placer les fichiers .txt dans `./ressources_client/Textes/`
-2. Se donner le droit d'exécuter les scripts si nécessaire avec `chmod +x script/*`
-3. Lancer autoScript.sh avec `script/autoScript.sh`
+2. Se donner le droit d'exécuter les scripts si nécessaire avec `chmod +x start.sh`
+3. Lancer le script avec `./start.sh`
 
-Le script bash `autoScript.sh` va exécuter le script php `script.php` pour chaque fichier texte contenu dans `./ressources_client/Textes/`
+Le script bash start.sh va exécuter `autoScript.sh` (dans un container PHP) qui va exécuter le script php `script.php` pour chaque fichier texte contenu dans `./ressources_client/Textes/`
 
 ## Exemple
 

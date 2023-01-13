@@ -18,7 +18,7 @@ section {
 
 }
 
-section.garde {
+section.garde h1,section.garde ul li {
     font-size: 50px;
     text-align: center;
     
