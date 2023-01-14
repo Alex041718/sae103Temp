@@ -42,7 +42,8 @@ Le résultat est la création de
 │   └── Textes
 │       ├── Auvergne-Rhone-Alpes.txt
 │       └── Bourgogne-Franche-Comté.txt
-└── script
-    ├── autoScript.sh
-    └── script.php
+├── script
+│   ├── autoScript.sh
+│   └── script.php
+└── start.sh
 ```
