@@ -4,7 +4,8 @@
 */
 
 body {
-    background-color: #e6e7ec;
+    /*background-color: #e6e7ec;*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
@@ -24,9 +25,14 @@ section.garde h1,section.garde ul li {
     
 }
 
+section h1 {
+    color: #003f8c;
+}
+
 ul.rang {
     display: flex;
     list-style-type: none;
+    
 }
 
 ul.pres li{
@@ -55,16 +61,52 @@ th {
 }
 
 p {
+    /*
     overflow-y: scroll;
     height: 100px;
+    */
 }
 
-div {
+.date {
     position: absolute;
     bottom: 0;
     min-height: 5rem;
     font-size: 15px;
 
+}
+
+#tabPerson {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+}
+
+.person {
+    display: flex;
+    gap: 40px;
+    padding: 15px;
+    border: 3px solid #003f8c ;
+    min-width: 315px;
+    margin: 1em 20px;
+}
+.person img {
+    width: 100px;
+    height: auto;
+    
+}
+
+#linkAnnexe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+
+}
+#linkAnnexe img {
+    width: 500px;
+    height: auto;
 }
 
 @media print {
@@ -73,7 +115,12 @@ div {
        width: 8.26in;
        height: 11.66in;
        margin: 0;
-       page-break-after: always;
+       
+    }
+
+    /* La propriété "page-break-after: always;" force un saut de page, cependant pour la dernière section(dernière page) nous n'avons pas besoin de sauter de page et d'avoir une page vide, donc la classe breakPage est donné à toute les sections sauf la dernière. */
+    section.breakPage {
+        page-break-after: always;
     }
  }
  

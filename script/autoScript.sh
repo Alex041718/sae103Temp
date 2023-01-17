@@ -9,4 +9,11 @@ do
     # exécute le script PHP en utilisant le nom de fichier courant comme paramètre
     php script.php "$filename"
     
+    
+done
+
+for codeISO in $(cat region.conf | cut -d ',' -f 1 | egrep FR)
+do
+    php ../pages/model.php codeISO
+
 done

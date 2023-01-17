@@ -50,6 +50,7 @@ while (($line = fgets($input_file)) !== false) {
     // Si on a trouvé une ligne de titre ou de sous-titre, on enregistre la valeur dans la variable $title
     if (substr(trim($line), 0, 6) == 'TITRE=' || substr(trim($line), 0, 11) == 'SOUS_TITRE=') {
         $title = trim(substr($line, strpos($line, '=') + 1));
+        
         continue;
         $title_placed = false;
 
@@ -57,7 +58,7 @@ while (($line = fgets($input_file)) !== false) {
     // Si on est dans la partie de texte à enregistrer, on enregistre le titre et la ligne dans le fichier de sortie
     if ($inside_text) {
         if (!$title_placed) {
-            fwrite($output_text_file, $title . "\n");
+            fwrite($output_text_file, "#" . $title . "\n");
             $title_placed = true;
         }
         fwrite($output_text_file, $line);
