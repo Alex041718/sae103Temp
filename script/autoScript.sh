@@ -12,7 +12,7 @@ do
     
 done
 
-for codeISO in $(cat region.conf | cut -d ',' -f 1 | egrep FR)
+for codeISO in $(cat shared/region.conf | cut -d ',' -f 1 | egrep FR)
 do
     php ../pages/model.php codeISO
 
