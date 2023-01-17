@@ -10,13 +10,13 @@ docker container run --rm -ti -v $PWD:/work/shared bigpapoo/sae103-php bash shar
 
 
 
-for codeISO in $(cat region.conf | cut -d ',' -f 1 | egrep FR)
+for codeISO in $(cat shared/region.conf | cut -d ',' -f 1 | egrep FR)
 do
     docker container run --rm -ti -v $PWD:/work/shared bigpapoo/sae103-qrcode qrencode -o shared/qrcodes/$codeISO.png “https://bigbrain.biz/$codeISO”
 
 done
 
-for codeISO in $(cat region.conf | cut -d ',' -f 1 | egrep FR)
+for codeISO in $(cat shared/region.conf | cut -d ',' -f 1 | egrep FR)
 do
 
 docker run --rm -ti -v $PWD:/work/shared bigpapoo/sae103-html2pdf "html2pdf shared/pages/model.html shared/pdfGenerated/$codeISO.pdf"
