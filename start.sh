@@ -26,6 +26,7 @@ do
 
     codeISO=$(cat ../region.conf | egrep ${nomRegion} | cut -d ',' -f 1)
 
-    
+    bash script/HtmlToPdf.sh ${codeISO}
+
 
 done
