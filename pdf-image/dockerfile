@@ -1,0 +1,14 @@
+FROM debian
+RUN apt-get update -y && apt upgrade -y && apt install -y locales locales-all chromium nodejs npm
+RUN npm install -g chrome-headless-render-pdf
+
+ENV LC_ALL fr_FR.UTF-8
+ENV LANG fr_FR.UTF-8
+ENV LANGUAGE fr_FR.UTF-8
+
+COPY html2pdf /usr/local/bin/html2pdf
+RUN chmod +x /usr/local/bin/html2pdf
+
+WORKDIR /distant
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]

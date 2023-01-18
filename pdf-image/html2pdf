@@ -1,0 +1,16 @@
+#/usr/bin/bash
+
+wd=$(pwd)
+
+if [ $# -ne 2 ]
+then
+   echo Syntaxe : $(basename $0) fichier.html fichier.pdf
+   exit 1
+fi
+if [ ! -f "$1" ]
+then
+   echo Fichier \"$1\" introuvable
+   exit 2
+fi
+
+chrome-headless-render-pdf --chrome-option="--no-sandbox" --url file:///$wd/$1 --pdf $2 --paper-width 8.27 --paper-height 11.69 --no-margins
