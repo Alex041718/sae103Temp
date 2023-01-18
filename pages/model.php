@@ -8,7 +8,7 @@
 </head>
 <?php
 $codeISO =$argv[1];
-
+//$codeISO ="FR-BRE";
 date_default_timezone_set('Europe/Paris');
 $date = date("Y-m-d H:i:s");
 $conf = fopen("../region.conf",'r');

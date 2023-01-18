@@ -6,7 +6,9 @@
 
     <body>
 <?php
-$codeISO =$argv[1];
+
+//$codeISO =$argv[1];
+$codeISO ="FR-BRE";
 $conf = fopen("../region.conf",'r');
 while ((!feof($conf))) {
     $line = fgets($conf);

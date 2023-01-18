@@ -1,5 +1,3 @@
-
-
 CODE=FR-ARA
 TITRE=Démographie
 DEBUT_TEXTE
