@@ -18,3 +18,14 @@ do
 
 done
 
+
+for file in ressources_client/Textes/*.txt
+do
+    # enlève l'extension .txt du nom de fichier, parce qu'on en veux pas
+    nomRegion=$(basename "$file" .txt)
+
+    codeISO=$(cat ../region.conf | egrep ${nomRegion} | cut -d ',' -f 1)
+
+    
+
+done

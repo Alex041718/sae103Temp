@@ -19,6 +19,9 @@ do
 
     #tr pour remplacer les " " par des - dans les nom des regions
     
+    # Génération des pdf
+
+    bash script/HtmlToPdf.sh ${codeISO}
 done
 
 exit -1
